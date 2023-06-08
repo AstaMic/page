@@ -1,0 +1,218 @@
+
+@for $i from 1 through 10 {
+  .m-#{$i}{
+    margin: #{$i}rem !important;
+  }  
+  .mt-#{$i}{
+    margin-top: #{$i}rem !important
+  }  
+  .mr-#{$i}{
+    margin-right: #{$i}rem !important;
+  }
+  .mb-#{$i}{
+    margin-bottom: #{$i}rem !important;
+  }  
+  .ml-#{$i}{
+    margin-left: #{$i}rem !important;
+  }   
+  .mx-#{$i}{
+    margin-left: #{$i}rem !important;
+    margin-right: #{$i}rem !important;
+  }
+  .my-#{$i}{
+    margin-top: #{$i}rem !important;
+    margin-bottom: #{$i}rem !important;
+  }
+  .p-#{$i}{
+    padding: #{$i}rem !important;
+  }
+  .pt-#{$i}{
+    padding-top: #{$i}rem !important;
+  }
+  .pr-#{$i}{
+    padding-right: #{$i}rem !important;
+  }
+  .pb-#{$i}{
+    padding-bottom: #{$i}rem !important;
+  }    
+  .pl-#{$i}{
+    padding-left: #{$i}rem !important;
+  }   
+  .px-#{$i}{
+    padding-left: #{$i}rem !important;
+    padding-right: #{$i}rem !important;
+  } 
+  .py-#{$i}{
+    padding-top: #{$i}rem !important;
+    padding-bottom: #{$i}rem !important;
+  }
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+       url('fonts/PlusJakartaSans-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.d-flex{
+  display: flex;
+}
+.flex-item{
+  flex: 1;
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-c{
+  justify-content: center;
+}
+.algin-c{
+  align-items: center;
+}
+.textWhite{
+  color: #fff;
+}
+.top{
+  font-weight: bold;
+  display: flex;
+  padding: 1rem;
+  margin-left: 30%;
+}
+.topImige {
+  display: none;
+}
+.topImage img {
+  height: 20px;
+  width: 20px;
+  padding: 2rem;
+}
+.logoContainer{
+  background-color: #F5F5F5;
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+.firstSegment {
+  position: relative;
+} 
+.firstSegment img{
+  width: 100%;
+  height: 700px;
+}
+.firstSegment  .p1 {
+  font-size: 48px;
+  white-space: nowrap;
+  position: absolute;
+  top: 40%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #fff;   
+}
+.firstSegment  .p2 {
+  font-size: 48px;
+  white-space: nowrap;
+  position: absolute;
+  top: 47%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.firstSegment button {
+  background-color:#C2110E;
+  position: absolute;
+  top: 85%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 15px;
+  font-size: 22px;
+  width: 360px;
+  height: 54px;
+  color: #fff
+}
+.black-button {
+  background-color: #000; 
+  border: none;
+  border-radius: 15px;
+  font-size: 22px;
+  width: 360px;
+  height: 54px;
+  color: #fff;
+  margin: auto
+}
+.mobile-break {
+  display: none;
+}
+.secondSegment{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+}
+.square{
+  background-color: #F9E8E7;
+  width: 180px;
+  height: 98px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.thirdSegment{
+  background-color: #0B0A0C;
+  height: 214px;
+  width: 100%;
+}
+.p4{
+  font-size: 20px;
+}
+.p5{
+  font-size: 16px;
+}
+@media only screen and (max-width: 772px ) {
+  .top{
+    margin-left: 1rem;
+  }
+  .logo{
+    margin-left: 25%;
+  }
+  .square{
+    flex-direction: column;
+    width: 120px
+  }
+  .p3{
+    display: flex;
+    justify-content: center;
+   }
+}
+@media only screen and (max-width: 500px) {
+  .mobile-break {
+    display: inline;
+  }
+  .firstSegment button {
+    width: 90%
+  }
+  .firstSegment .p1{
+    top: 30%
+  }
+  .secondSegment{
+    flex-wrap: wrap;
+  }
+  .p3{
+    display: flex;
+    justify-content: center;
+   }
+}
